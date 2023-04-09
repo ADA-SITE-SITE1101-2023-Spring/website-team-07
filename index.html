@@ -13,12 +13,12 @@
       referrerpolicy="no-referrer"
     />
     <title>Home</title>
+    <script src="myscript.js"></script>
   </head>
 
   <body>
-    <script src="myscript.js"></script>
     <nav>
-      <div class="first--part">
+      <div class="nav--first">
         <div class="number--email">
           <div class="email">
             <a
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="second--part">
+      <div class="nav--second">
         <div class="title">
           <a href="https://www.ada.edu.az/" target="_blank"
             ><img
@@ -85,11 +85,17 @@
         </ul>
       </div>
     </nav>
-    <div class="third--part"></div>
+
+    <div class="background--image">
+      <button class="button1"><a href="./mini/index.html">Zulfiyya</a></button>
+      <button class="button2"><a>Arif</a></button>
+      <button class="button3"><a>Cahangir</a></button>
+      <button class="button4"><a>Alsari</a></button>
+    </div>
+
     <div class="forth--part">
       <div class="text--table">
-        <div class="forth--text">
-          <!-- <p class="colorful">ABOUT US</p> -->
+        <article class="forth--text">
           <p class="big">TEAM 07</p>
           <p class="small">
             Zulfiyya Safarli: team leader <br />
@@ -107,17 +113,8 @@
               manager</span
             >
           </p>
-        </div>
-        <!-- i will add pictures -->
-        <!-- <div class="forth--images">
-          <div class="images--row">
-            <div class="row--first"><img src="" alt="" /></div>
-            <div class="row--second"><img src="" alt="" /></div>
-          </div>
-          <div class="images--column">
-            <img src="" alt="" />
-          </div>
-        </div> -->
+        </article>
+
         <div class="forth--table">
           <div class="center">
             <button class="button" id="colorButton">Change color!</button>
@@ -154,12 +151,14 @@
       </div>
     </div>
   </body>
+
   <footer>
-    <div class="fifth--part">
-      <div class="copyright">
+    <div class="footer">
+      <article class="copyright">
         <p>Copyright ©2023 All rights reserved</p>
-      </div>
-      <div class="icons">
+      </article>
+
+      <section class="icons">
         <a
           href="https://www.facebook.com/profile.php?id=100088482500963"
           target="_blank"
@@ -173,7 +172,7 @@
           target="_blank"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
-      </div>
+      </section>
     </div>
   </footer>
 </html>
