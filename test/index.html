@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pop-up Form Example</title>
+    <style>
+      #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 1px solid black;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="popup-button">Open Form</button>
+
+    <div id="popup">
+      <h2>Pop-up Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br>
+
+        <label for="pizza">Do you like pizza?</label><br>
+        <input type="radio" id="pizza-yes" name="pizza" value="yes">
+        <label for="pizza-yes">Yes</label><br>
+        <input type="radio" id="pizza-no" name="pizza" value="no">
+        <label for="pizza-no">No</label><br>
+
+        <label for="pets">Do you have any pets?</label><br>
+        <input type="radio" id="pets-yes" name="pets" value="yes">
+        <label for="pets-yes">Yes</label><br>
+        <input type="radio" id="pets-no" name="pets" value="no">
+        <label for="pets-no">No</label><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var popupButton = document.getElementById('popup-button');
+        var popup = document.getElementById('popup');
+
+        popupButton.addEventListener('click', function(event) {
+          event.preventDefault();
+          popup.style.display = 'block';
+        });
+
+        var form = document.querySelector('form');
+
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          // Get the values of the form fields
+          var name = document.getElementById('name').value;
+          var age = document.getElementById('age').value;
+          var pizza = document.querySelector('input[name="pizza"]:checked').value;
+          var pets = document.querySelector('input[name="pets"]:checked').value;
+
+          // Do something with the form data
+          console.log('Name: ' + name);
+          console.log('Age: ' + age);
+          console.log('Likes pizza: ' + pizza);
+          console.log('Prefers ' + pets);
+
+          // Reset the form
+          form.reset();
+
+          // Hide the pop-up
+          popup.style.display = 'none';
+        });
+      });
+    </script>
+  </body>
+</html>
