@@ -97,13 +97,6 @@
   color: rgb(198, 196, 196);
   transition: all 0.9s ease-in-out;
 }
-.nav--second ul .search {
-  cursor: pointer;
-}
-.nav--second ul .search:hover {
-  color: #1cc3b2;
-  transition: all 0.9s ease-in-out;
-}
 .nav--second ul .dropdown {
   position: relative;
   display: inline-block;
@@ -165,8 +158,6 @@
   left: 50%;
   width: 100px;
   height: 100px;
-  /* background-color: #336178;
-  border-color: #336178; */
   background-image: url("./pictures/7694463.png");
   background-size: cover;
   border-radius: 50%;
@@ -231,11 +222,6 @@
     transform: translate(0, -90px);
   }
 }
-
-
-
-
-
 .forth--part {
   width: 100%;
   display: flex;
@@ -250,10 +236,6 @@
   padding-left: 20px;
   text-align: justify;
 }
-/* .forth--part .text--images .forth--text .colorful {
-    color: #1cc3b2;
-    font-size: 20px;
-  } */
 .forth--part .text--table .forth--text .big {
   color: #336178;
   font-size: 30px;
