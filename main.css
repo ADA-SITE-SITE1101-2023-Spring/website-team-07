@@ -123,10 +123,7 @@
   padding-left: 20px;
   padding-bottom: 20px;
 }
-.nav--second .navbar ul .dropdown:hover .dropdown--content ul li a:hover {
-  color: #1cc3b2;
-  transition: all 0.9s ease-in-out;
-}
+
 .nav--second ul .dropdown a {
   color: black;
   cursor: pointer;
@@ -168,7 +165,7 @@
 .button1 a,
 .button2 a,
 .button3 a,
-.button4 a{
+.button4 a {
   color: white;
 }
 .button1 {
@@ -249,11 +246,11 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.forth--part .text--table .forth--text .name .black {
+.forth--part .text--table .forth--text .name .quote {
   color: #336178;
   font-size: 23px;
 }
-.forth--part .text--table .forth--text .name .aqua {
+.forth--part .text--table .forth--text .name .person {
   color: #ae485e;
   font-size: 23px;
 }
