@@ -88,24 +88,24 @@
           <!-- <p class="colorful">ABOUT US</p> -->
           <p class="big"><strong>Hour of Code</strong></p>
           <p class="small">
-            Greetings to all. We are students of SITE at ADA! You will learn
+            Greetings to all. We are students of SITE! You will learn
             about our "Hours of Code" assignment, which required us to instruct
             kids and then share our insights via Code.org.
-            <em>We are group 07.</em>
+            <em>We are Tech Pirates (group 07).</em>
             <strong
               >Arif Mammadli, Zulfiyya Safarli, Jahangir Khalafov, and Alsari
               Mohamed Abbas Saad Eldin</strong
             >
-            are the members of our team. The school No. 264 in Gunashli hosted
+            are the members of Tech Pirates. The school No. 264 in Gunashli hosted
             an Hour of Code event that was arranged by our team. Despite our
             early Internet connection issues in the classroom, we were still
             able to host a successful event. We start by introducing ADA
             University, then go into great detail about our faculty, programming
             languages, and basic Code.org information. Then we began carrying
             out the activities with the kids. They finished all the tasks in
-            about 30 minutes since they worked quickly and intelligently.
-            Students who finished all the problems were awarded diplomas for
-            their participation at the end of the event!
+            about 20-30 minutes since they worked quickly and intelligently.
+            Students who participated were awarded diplomas for
+            their participation in the end!
           </p>
           <p class="name">
             <span class="quote"
@@ -120,15 +120,24 @@
 
         <div class="forth--video">
           <div style="text-align:center"> 
-            <button onclick="PlayPause()">Play > Pause</button> 
-            <button onclick="Smallsize()">Small</button>
+            <button onclick="PlayPause()"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button> 
+            <button onclick="Smallsize()"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
             <button onclick="Normalsize()">Normal</button>
-            <button onclick="Bigsize()">Big</button>
+            <button onclick="Bigsize()"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
             <br><br>
             <video id="hourofcode" width="400" height="200"controls>
               <source src="../hour/vids/WhatsApp Video 2023-04-07 at 13.14.39.mp4" type="video/mp4">
             </video>
           </div> 
+          <section class="heart--comment">
+            <div class="heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div id="comment-box">
+              <input type="text" id="comment-input" placeholder="Write a comment...">
+              <ul id="comment-list"></ul>
+            </div>
+          </section>
         </div>
 
       </div>
