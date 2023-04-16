@@ -128,11 +128,6 @@
   padding-left: 20px;
   padding-bottom: 20px;
 }
-.nav--second .navbar ul .dropdown:hover .dropdown--content ul li a:hover {
-  color: #1cc3b2;
-  transition: all 0.9s ease-in-out;
-}
-
 .nav--second ul .dropdown a {
   color: black;
   cursor: pointer;
